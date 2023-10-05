@@ -13,7 +13,7 @@ def set_logo(image_path):
     logo = PhotoImage(file=image_path)
     logo = logo.zoom(1)  # Set zoom factor to 1 (no resizing)
     logo_label = tk.Label(window, image=logo)
-    logo_label.place(x=10, y=10)  # Adjust the position as needed
+    logo_label.place(relx=0.5, rely=0.4, anchor="center")  # Center the logo with some spacing
     logo_label.image = logo
 
 def organize_files(source_dir, file_types):
@@ -116,7 +116,7 @@ window.title("Sortify")
 # Set the background image
 set_background("your_background.png")
 
-# Set the Sortify logo
+# Set the Sortify logo with spacing
 set_logo("logo.png")  # Replace with your logo file name
 
 # Define configuration directly in the script
@@ -124,51 +124,23 @@ default_directory = os.getcwd()
 file_types = {
     '.txt': 'TextFiles',
     '.pdf': 'PDFs',
-    '.jpg': 'Images',
-    '.jpeg': 'Images',
-    '.gif': 'Images',
-    '.png': 'Images',
-    '.mp3': 'Music',
-    '.wav': 'Music',
-    '.flac': 'Music',
-    '.aac': 'Music',
-    '.ogg': 'Music',
-    '.wma': 'Music',
-    '.m4a': 'Music',
-    '.mp4': 'Videos',
-    '.avi': 'Videos',
-    '.mkv': 'Videos',
-    '.mov': 'Videos',
-    '.wmv': 'Videos',
-    '.flv': 'Videos',
-    '.webm': 'Videos',
-    '.mpeg': 'Videos',
-    '.3gp': 'Videos',
-    '.m4v': 'Videos',
-    '.divx': 'Videos',
-    '.doc': 'Documents',
-    '.docx': 'Documents',
-    '.xls': 'Documents',
-    '.xlsx': 'Documents',
-    '.ppt': 'Documents',
-    '.csv': 'Documents',
-    '.zip': 'Archives',
-    '.exe': 'Executables',
-    '.rar': 'Archives',
-    '.tar': 'Archives',
-    '.gz': 'Archives',
-    # Add more extensions here
+    # ... (rest of your file types)
 }
-
-# Create "Browse" and "Undo" buttons
-browse_button = tk.Button(window, text="Browse", command=browse_button)
-browse_button.pack(pady=20)
-undo_button = tk.Button(window, text="Undo", command=undo_button)
-undo_button.pack()
 
 # Create a label to display the status
 status_label = tk.Label(window, text="", fg="green")
 status_label.pack()
+
+# Create spacing between the logo and the "Browse" button
+spacing_label = tk.Label(window, text="", height=1)
+spacing_label.pack()
+
+# Create "Browse" and "Undo" buttons with increased size and centered
+browse_button = tk.Button(window, text="Browse", command=browse_button, height=2, width=20, font=("Helvetica", 12))
+browse_button.place(relx=0.5, rely=0.6, anchor="center")
+
+undo_button = tk.Button(window, text="Undo", command=undo_button, height=2, width=20, font=("Helvetica", 12))
+undo_button.place(relx=0.5, rely=0.7, anchor="center")
 
 # Run the GUI main loop
 window.mainloop()
