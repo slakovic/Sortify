@@ -32,6 +32,10 @@ Follow these steps to install Sortify on your system:
 
 3. Launch Sortify and start organizing your files efficiently.
 
+## Demo
+
+To watch the demo of the app go to this site (https://youtu.be/Igdo2IoWsK0/)
+
 ## Usage
 
 1. **Launching Sortify:** Upon opening Sortify, you'll be presented with a user-friendly interface.
