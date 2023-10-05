@@ -2,7 +2,7 @@
 
 Sortify is a powerful and user-friendly application designed to help you efficiently organize your digital files and maintain a structured file system. This README provides an overview of Sortify's features, installation instructions, and usage guidelines.
 
-![Sortify Logo](your_logo.png) <!-- Include your app logo here -->
+![Sortify Logo](logo.png) <!-- Include your app logo here -->
 
 ## Features
 
@@ -26,7 +26,7 @@ Sortify is a powerful and user-friendly application designed to help you efficie
 
 Follow these steps to install Sortify on your system:
 
-1. Download the installation package for your platform from the [Sortify website](https://www.sortifyapp.com).
+1. Download the installation package for your platform from the [Sortify website](https://sortifyapp.netlify.app/)
 
 2. Run the installer and follow the on-screen instructions to complete the installation.
 
@@ -60,5 +60,5 @@ We would like to thank our dedicated team and the open-source community for thei
 
 Thank you for choosing Sortify to simplify your file organization! We hope you find it valuable and user-friendly.
 
-For the latest updates and news, visit [Sortify's official website](https://www.sortifyapp.com).
+For the latest updates and news, visit [Sortify's official website](https://sortifyapp.netlify.app/).
 
